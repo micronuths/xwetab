@@ -1,0 +1,22 @@
+<!DOCTYPE html><html class="h-full"><head><meta charset="UTF-8"><meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta
+            http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>WeTab
+            新标签页</title><style>@media (prefers-color-scheme:dark){body{background:#38383d}}body{--hover:1;--pointer:0}@media (hover:none){body{--hover:0}}@media (pointer:fine){body{--pointer:1}}</style><link
+            rel="icon" href="../icons/icon_zh_48.png"><link
+            href="../assets/css/8169-862afa4f.css" rel="stylesheet"><link
+            href="../assets/css/hitab-244d4c43.css" rel="stylesheet">
+    </head><body
+        class="body-root h-full overflow-hidden leading-[1.414] text-[14px] select-none"><div
+            id="app" class="h-full relative"></div><script
+            src="../hitab/hitab-7d947024.js"></script>
+        <script>
+            // js文件中，GlobalGetApi 拼接请求资源前缀，eg：GlobalGetApi+"http://..."
+            var GlobalGetApi = window.location.protocol+'//'+window.location.host+"/get?url=";
+            // 解决 css文件中url()函数引用资源，产生跨域403错误，添加前缀,eg：url(var(--base-url-httpGetApi)+http://...)
+            var GlobalCssUrlPrefix = document.createElement('style'); 
+            GlobalCssUrlPrefix.type = 'text/css'; 
+            GlobalCssUrlPrefix.innerHTML=":root {--base-url-httpGetApi:"+GlobalGetApi+";--base-url-httpsGetApi: "+GlobalGetApi+";}"; 
+            document.getElementsByTagName('head').item(0).appendChild(GlobalCssUrlPrefix); 
+            
+            </script></body></html>
